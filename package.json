@@ -1,5 +1,5 @@
 {
-  "name": "angular-graphql-upload-file",
+  "name": "angular-ssr-graphql-apollo-express-upload-file",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-graphql-upload-file:serve-ssr",
-    "serve:ssr": "node dist/angular-graphql-upload-file/server/main.js",
-    "build:ssr": "ng build && ng run angular-graphql-upload-file:server",
-    "prerender": "ng run angular-graphql-upload-file:prerender"
+    "dev:ssr": "ng run angular-ssr-graphql-apollo-express-upload-file:serve-ssr",
+    "serve:ssr": "node dist/angular-ssr-graphql-apollo-express-upload-file/server/main.js",
+    "build:ssr": "ng build && ng run angular-ssr-graphql-apollo-express-upload-file:server",
+    "prerender": "ng run angular-ssr-graphql-apollo-express-upload-file:prerender"
   },
   "private": true,
   "dependencies": {

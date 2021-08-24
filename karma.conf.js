@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-graphql-upload-file'),
+      dir: require('path').join(__dirname, './coverage/angular-ssr-graphql-apollo-express-upload-file'),
       subdir: '.',
       reporters: [
         { type: 'html' },

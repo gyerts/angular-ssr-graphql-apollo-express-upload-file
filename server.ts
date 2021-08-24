@@ -15,7 +15,7 @@ export function app(): express.Express {
 
   initGraphql(server);
 
-  const distFolder = join(process.cwd(), 'dist/angular-graphql-upload-file/browser');
+  const distFolder = join(process.cwd(), 'dist/angular-ssr-graphql-apollo-express-upload-file/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)

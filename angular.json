@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-graphql-upload-file": {
+    "angular-ssr-graphql-apollo-express-upload-file": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-graphql-upload-file/browser",
+            "outputPath": "dist/angular-ssr-graphql-apollo-express-upload-file/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-graphql-upload-file:build:production"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:production"
             },
             "development": {
-              "browserTarget": "angular-graphql-upload-file:build:development"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-graphql-upload-file:build"
+            "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-graphql-upload-file/server",
+            "outputPath": "dist/angular-ssr-graphql-apollo-express-upload-file/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -128,12 +128,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular-graphql-upload-file:build:development",
-              "serverTarget": "angular-graphql-upload-file:server:development"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:development",
+              "serverTarget": "angular-ssr-graphql-apollo-express-upload-file:server:development"
             },
             "production": {
-              "browserTarget": "angular-graphql-upload-file:build:production",
-              "serverTarget": "angular-graphql-upload-file:server:production"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:production",
+              "serverTarget": "angular-ssr-graphql-apollo-express-upload-file:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -147,12 +147,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-graphql-upload-file:build:production",
-              "serverTarget": "angular-graphql-upload-file:server:production"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:production",
+              "serverTarget": "angular-ssr-graphql-apollo-express-upload-file:server:production"
             },
             "development": {
-              "browserTarget": "angular-graphql-upload-file:build:development",
-              "serverTarget": "angular-graphql-upload-file:server:development"
+              "browserTarget": "angular-ssr-graphql-apollo-express-upload-file:build:development",
+              "serverTarget": "angular-ssr-graphql-apollo-express-upload-file:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -160,5 +160,5 @@
       }
     }
   },
-  "defaultProject": "angular-graphql-upload-file"
+  "defaultProject": "angular-ssr-graphql-apollo-express-upload-file"
 }
