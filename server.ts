@@ -7,14 +7,13 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
-import { apolloServer } from "./src/server";
+import { initGraphql } from "./src/server";
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
 
-  // Add apollo server as middleware
-  apolloServer.applyMiddleware({ app: server });
+  initGraphql(server);
 
   const distFolder = join(process.cwd(), 'dist/angular-graphql-upload-file/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
