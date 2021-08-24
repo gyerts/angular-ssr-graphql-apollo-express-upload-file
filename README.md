@@ -1,3 +1,21 @@
+# What is it?
+
+This is solution to upload files using:
+- `@apollo/client`: `^3.0.0`,
+- `@nguniversal/express-engine`: `^12.1.0`,
+- `apollo-angular`: `^2.6.0`,
+- `apollo-server-express`: `^2`,
+- `express`: `^4.15.2`,
+- `graphql`: `^15.5.1`,
+- `graphql-upload`: `^12.0.0`,
+
+
+
+
+### How it looks and works.
+![](docs/browser.png)
+![](docs/ide.png)
+
 ### Why `apollo-server-express: ^2` ?
 
 When use version 3, next errors occurs
