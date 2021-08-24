@@ -44,3 +44,4 @@ testem.log
 .DS_Store
 Thumbs.db
 uploaded_files/
+.pr-train.yml
